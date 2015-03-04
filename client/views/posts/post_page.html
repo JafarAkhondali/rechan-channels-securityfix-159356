@@ -2,13 +2,13 @@
   {{> postItem}}
 
   <ul class="comments">
-    {{#each comments}}
-      {{> comment}}
+    {{#each childrenPosts}}
+      {{> postItem}}
     {{/each}}
   </ul>
 
   {{#if currentUser}}
-    {{> commentSubmit}}
+    {{> postSubmit}}
   {{else}}
     <p>Please log in to leave a comment.</p>
   {{/if}}

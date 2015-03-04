@@ -3,9 +3,9 @@ Template.postSubmit.events({
         e.preventDefault();
 
         var post = {
-            url: $(e.target).find('[name=url]').val(),
             title: $(e.target).find('[name=title]').val(),
-            message: $(e.target).find('[name=message]').val()
+            content: $(e.target).find('[name=content]').val(),
+            parentId: this._id
         };
 
         Meteor.call('post', post, function (error, id) {

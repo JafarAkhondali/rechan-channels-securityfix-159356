@@ -3,5 +3,7 @@
   "description": "real-time mobile app",
   "version": "0.0.1",
   "dependencies": {
+    "compass": "^0.1.0",
+    "materialize": "^1.0.0"
   }
 }

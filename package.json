@@ -1,10 +1,10 @@
 {
-    "name": "material-ui-example",
-    "version": "0.7.0",
-    "description": "Sample project that uses material-ui",
+    "name": "channels",
+    "version": "0.1",
+    "description": "real-time mobile app",
     "repository": {
         "type": "git",
-        "url": "https://github.com/callemall/material-ui.git"
+        "url": "https://github.com/rechan/channels.git"
     },
     "scripts": {
         "start": "gulp"

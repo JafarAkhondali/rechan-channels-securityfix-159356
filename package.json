@@ -3,7 +3,8 @@
   "description": "real-time mobile app",
   "version": "0.0.1",
   "dependencies": {
-    "compass": "^0.1.0",
-    "materialize-css": "^0.95.3"
+    "material-ui": "^0.7.1",
+    "react": "^0.12.2",
+    "react-tap-event-plugin": "^0.1.4"
   }
 }

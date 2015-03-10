@@ -6439,3 +6439,36 @@ body {
 .mui-transition-slide-in.mui-is-down .mui-transition-slide-in-leave-active {
   transform: translate3d(0, 100%, 0);
 }
+
+/* line 3, ../sass/main.scss */
+.main-container {
+  width: 100%;
+}
+
+/* line 7, ../sass/main.scss */
+.header-container {
+  width: 100%;
+  height: 100px;
+  background-color: green;
+}
+
+/* line 13, ../sass/main.scss */
+.posts-container {
+  background-color: aqua;
+  text-align: center;
+  padding: 20px;
+}
+
+/* line 19, ../sass/main.scss */
+.post-container {
+  border: 1px solid red;
+  text-align: center;
+}
+
+/* line 24, ../sass/main.scss */
+.footer-container {
+  width: 100%;
+  height: 100px;
+  background-color: green;
+  text-align: center;
+}

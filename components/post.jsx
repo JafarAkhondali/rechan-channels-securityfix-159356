@@ -4,12 +4,15 @@ var mui = require('material-ui');
 var Post = React.createClass({
     render: function () {
         return (
-            <div className="post-container">
-                <h2>This is a post!</h2>
-                Posted By: {this.props.author}<br />
-                <p>
-                    {this.props.children}
-                </p>
+            <div className="card blue-grey darken-1">
+                <div className="card-content white-text">
+                    <span className="card-title">Posted By: {this.props.author}</span>
+                    <p>{this.props.children}</p>
+                </div>
+                <div className="card-action">
+                    <a href="#">This is a link</a>
+                    <a href='#'>This is a link</a>
+                </div>
             </div>
         );
     }

@@ -1,34 +1,35 @@
 var React = require('react');
 var mui = require('material-ui');
-var Header = require('./header.jsx');
+var Home = require('./home.jsx');
 var Posts = require('./posts.jsx');
-var Footer = require('./footer.jsx');
-
-var MenuItem = mui.MenuItem;
-var LeftNav = mui.LeftNav;
-
-var menuItems = [
-      { route: 'get-started', text: 'Get Started' },
-      { route: 'css-framework', text: 'CSS Framework' },
-      { route: 'components', text: 'Components' },
-      { type: MenuItem.Types.SUBHEADER, text: 'Resources' },
-      {
-         type: MenuItem.Types.LINK,
-         payload: 'https://github.com/callemall/material-ui',
-         text: 'GitHub'
-      },
-    ];
+var Camera = require('./camera.jsx');
 
 var Main = React.createClass({
     render: function () {
-        return (
+        var route = this.props.route;
+
+        if (route === 'home') {
+          return (
             <div className="main-container">
-                <LeftNav menuItems={menuItems} />
-                <Header />
-                <Posts />
-                <Footer />
+              <Home />
             </div>
-        );
+          );
+        }
+        if (route === 'posts') {
+          return (
+            <div className="main-container">
+              <Posts />
+            </div>
+          );
+        }
+        if (route === 'camera') {
+          return (
+            <div className="main-container">
+              <Camera />
+            </div>
+          );
+        }
+
     }
 });
 

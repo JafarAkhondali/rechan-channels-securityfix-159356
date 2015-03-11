@@ -22,8 +22,8 @@ var Sheet = React.createClass({
     render: function () {
         return (
             <div className="sheet-container">
-                <Header />
                 <Main route={this.props.route} />
+                <Header />
                 <Footer />
             </div>
         );

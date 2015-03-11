@@ -1,8 +1,8 @@
 @import "../node_modules/materialize-css/sass/ghpages-materialize";
 @import "../node_modules/material-ui-sass/material-ui";
 
-$header-height: 100px;
-$footer-height: 100px;
+$header-height: 70px;
+$footer-height: 70px;
 
 body {
   width: 100%;
@@ -17,8 +17,6 @@ body {
 .header-container {
   width: 100%;
   height: $header-height;
-  background-color: green;
-  text-align: center;
   position: fixed;
   top: 0px;
 }
@@ -26,8 +24,6 @@ body {
 .footer-container {
   width: 100%;
   height: $footer-height;
-  background-color: green;
-  text-align: center;
   position: fixed;
   bottom: 0px;
 }

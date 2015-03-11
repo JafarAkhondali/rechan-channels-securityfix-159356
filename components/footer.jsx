@@ -5,7 +5,7 @@ var Footer = React.createClass({
     render: function () {
         return (
             <div className="footer-container green center">
-                footer
+                <a href="#"><i className="mdi-image-camera-alt"></i></a>
             </div>
         );
     }

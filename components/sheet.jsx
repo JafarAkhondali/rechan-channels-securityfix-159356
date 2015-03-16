@@ -1,4 +1,6 @@
 var React = require('react');
+var Router = require('react-router');
+var RouteHandler = Router.RouteHandler;
 var mui = require('material-ui');
 var Header = require('./header.jsx');
 var Main = require('./main.jsx');
@@ -22,7 +24,9 @@ var Sheet = React.createClass({
     render: function () {
         return (
             <div className="sheet-container">
-                <Main route={this.props.route} />
+                <div className="main-container">
+                  <RouteHandler {...this.props} />
+                </div>
                 <Header />
                 <Footer />
             </div>

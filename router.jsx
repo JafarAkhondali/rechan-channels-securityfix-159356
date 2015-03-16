@@ -8,7 +8,7 @@ var Camera = require('./components/camera.jsx');
 var NotFound = require('./components/notfound.jsx');
 
 // Request
-var request = require("superagent");
+//var request = require("superagent");
 
 // Set up Router object
 var Route = Router.Route;

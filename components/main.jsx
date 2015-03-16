@@ -29,6 +29,13 @@ var Main = React.createClass({
             </div>
           );
         }
+        else {
+          return (
+            <div className="main-container">
+              <Home />
+            </div>
+          );
+        }
 
     }
 });

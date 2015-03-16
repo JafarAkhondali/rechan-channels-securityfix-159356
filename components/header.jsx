@@ -5,15 +5,10 @@ var MenuItem = mui.MenuItem;
 var IconButton = mui.IconButton;
 
 var menuItems = [
-      { route: 'get-started', text: 'Get Started' },
-      { route: 'css-framework', text: 'CSS Framework' },
-      { route: 'components', text: 'Components' },
-      { type: MenuItem.Types.SUBHEADER, text: 'Resources' },
-      {
-         type: MenuItem.Types.LINK,
-         payload: 'https://github.com/callemall/material-ui',
-         text: 'GitHub'
-      }
+      { route: 'home', text: 'Home' },
+      { route: 'posts', text: 'Posts' },
+      { route: 'camera', text: 'Camera' },
+      { type: MenuItem.Types.SUBHEADER, text: '(note: these links should actually be a list of available channels)' }
     ];
 
 var Header = React.createClass({

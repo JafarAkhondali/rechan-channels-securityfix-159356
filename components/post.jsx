@@ -7,12 +7,11 @@ var Post = React.createClass({
             <div className="post-container">
                 <div className="card blue-grey darken-1">
                     <div className="card-content white-text">
-                        <span className="card-title">Posted By: {this.props.author}</span>
-                        <p>{this.props.children}</p>
+                        <span className="card-title">Posted By: {this.props.post.author}</span>
+                        <p>{this.props.post.content}</p>
                     </div>
                     <div className="card-action">
-                        <a href="#">This is a link</a>
-                        <a href='#'>This is a link</a>
+                        <a href="#">reply</a>
                     </div>
                 </div>
             </div>

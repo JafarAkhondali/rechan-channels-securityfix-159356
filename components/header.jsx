@@ -1,25 +1,59 @@
 var React = require('react');
+var Router = require('react-router');
 var mui = require('material-ui');
 var LeftNav = mui.LeftNav;
 var MenuItem = mui.MenuItem;
 var IconButton = mui.IconButton;
 
 var menuItems = [
-      { route: 'home', text: 'Home' },
-      { route: 'posts', text: 'Posts' },
-      { route: 'camera', text: 'Camera' },
-      { type: MenuItem.Types.SUBHEADER, text: '(note: these links should actually be a list of available channels)' }
+      { route: 'posts', text: 'Fitness' },
+      { route: 'posts', text: 'Hacking' },
+      { route: 'posts', text: 'Basket Weaving' }
     ];
 
 var Header = React.createClass({
+    mixins: [Router.Navigation, Router.State],
+
+    getInitialState: function () {
+        return {
+            selectedIndex: null
+        };
+    },
+
     toggleLeftNav: function () {
         this.refs.leftNav.toggle();
+    },
+
+     _getSelectedIndex: function () {
+        var currentItem;
+
+        for (var i = menuItems.length - 1; i >= 0; i--) {
+            currentItem = menuItems[i];
+            if (currentItem.route && this.isActive(currentItem.route)) {
+                return i;
+            }
+        };
+    },
+
+    _onLeftNavChange: function (e, key, payload) {
+        var channelName = menuItems[key].text;
+        var channelNameContainer = document.querySelector('.channel-name-container');
+
+        channelNameContainer.innerHTML = channelName;
+        this.transitionTo(payload.route);
+
     },
 
     render: function () {
         return (
             <div className="header-container green">
-                <LeftNav menuItems={menuItems} docked={false} ref="leftNav" />
+                <LeftNav
+                    menuItems={menuItems}
+                    docked={false}
+                    ref="leftNav"
+                    isInitiallyOpen={false}
+                    selectedIndex={null}
+                    onChange={this._onLeftNavChange} />
                 <nav>
                     <div className="nav-wrapper green">
                         <ul className="left">
@@ -27,12 +61,11 @@ var Header = React.createClass({
                                 <IconButton iconClassName="mdi-action-list" onClick={this.toggleLeftNav} />
                             </li>
                         </ul>
-                        <ul className="right">
-                            <li><a href="sass.html"><i className="mdi-action-search"></i></a></li>
-                            <li><a href="components.html"><i className="mdi-action-view-module"></i></a></li>
-                            <li><a href="javascript.html"><i className="mdi-navigation-refresh"></i></a></li>
-                            <li><a href="mobile.html"><i className="mdi-navigation-more-vert"></i></a></li>
-                        </ul>
+                        <div className="center">
+                            <div className="channel-name-container">
+                                Channel Name
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>

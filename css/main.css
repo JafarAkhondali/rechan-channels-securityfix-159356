@@ -19379,15 +19379,17 @@ body {
 body {
   width: 100%;
   height: 100%;
+  background-color: aqua;
 }
 
-/* line 12, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 .sheet-container {
   width: 100%;
+  height: 100%;
   text-align: center;
 }
 
-/* line 17, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 .header-container {
   width: 100%;
   height: 70px;
@@ -19395,29 +19397,34 @@ body {
   top: 0px;
 }
 
-/* line 24, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 .footer-container {
   width: 100%;
   height: 70px;
   position: fixed;
   bottom: 0px;
 }
+/* line 32, ../sass/main.scss */
+.footer-container .post-content {
+  display: inline-block;
+  background-color: white;
+  width: 300px;
+}
 
-/* line 31, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 .main-container {
   width: 100%;
   min-height: 100%;
   padding: 70px 0 70px 0;
-  background-color: aqua;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 .posts-container {
   width: 100%;
   text-align: center;
 }
 
-/* line 43, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .post-container {
   text-align: center;
   margin: 10px;

@@ -36,6 +36,7 @@
     "watchify": "^2.2.1"
   },
   "dependencies": {
+    "biff": "^0.1.3",
     "gulp-sass": "^1.3.3",
     "material-ui": "^0.7.0",
     "material-ui-sass": "^0.5.3",

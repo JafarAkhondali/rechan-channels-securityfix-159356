@@ -28,12 +28,6 @@ body {
   height: $footer-height;
   position: fixed;
   bottom: 0px;
-
-  .post-content {
-    display: inline-block;
-    background-color: white;
-    width: 300px;
-  }
 }
 
 .main-container {
@@ -50,4 +44,15 @@ body {
 .post-container {
   text-align: center;
   margin: 10px;
+}
+
+.submit-post-container {
+  width: 100%;
+  text-align: center;
+
+  .post-content {
+    display: inline-block;
+    background-color: white;
+    width: 300px;
+  }
 }

@@ -19404,28 +19404,34 @@ body {
   position: fixed;
   bottom: 0px;
 }
-/* line 32, ../sass/main.scss */
-.footer-container .post-content {
-  display: inline-block;
-  background-color: white;
-  width: 300px;
-}
 
-/* line 39, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 .main-container {
   width: 100%;
   min-height: 100%;
   padding: 70px 0 70px 0;
 }
 
-/* line 45, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 .posts-container {
   width: 100%;
   text-align: center;
 }
 
-/* line 50, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 .post-container {
   text-align: center;
   margin: 10px;
+}
+
+/* line 49, ../sass/main.scss */
+.submit-post-container {
+  width: 100%;
+  text-align: center;
+}
+/* line 53, ../sass/main.scss */
+.submit-post-container .post-content {
+  display: inline-block;
+  background-color: white;
+  width: 300px;
 }

@@ -1,5 +1,4 @@
 var React = require('react');
-var mui = require('material-ui');
 var Post = require('./post.jsx');
 
 var PostsStore = require("../stores/posts-store");
